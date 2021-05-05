@@ -23,7 +23,7 @@ const LandingPage = () => {
                                     'Tech Enthusiast',
                                     'Raptors Fan',
                                     'Fitness Enthusiast',
-                                    'Food Lover'
+                                    'Foodie'
                                 ],
                                 autoStart: true,
                                 loop: true,
