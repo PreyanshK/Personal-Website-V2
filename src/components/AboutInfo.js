@@ -16,7 +16,7 @@ const AboutInfo = () => {
             </AboutText>
 
             <AboutText>
-                When I’m not in front of my computer, I like working out, playing basketball, and watching Netflix!
+                When I’m not in front of my computer, I'm probably working out, playing basketball, or watching Netflix!
             </AboutText>
 
             <IconContainer>
@@ -34,7 +34,7 @@ const AboutContainer = styled.div `
 `
 
 const AboutText = styled.p `
-    font-size: 15px;
+    font-size: 16px;
     font-weight: lighter;
 `
 

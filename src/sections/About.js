@@ -21,13 +21,13 @@ const About = () => {
 export default About
 
 const AboutContainer = styled.section `
-    height: 600px;
-    padding: 40px 60px;
-    margin: auto;
+    padding: 40px;
+    /* background-color: lightgreen; */
 `
 
 // This wrapper allows me to horizontally center the About content
 const AboutWrapper = styled.div`
+    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;

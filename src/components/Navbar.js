@@ -22,41 +22,38 @@ const NavContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 60px;
     width: 100%;
     background-color: white;
     box-shadow: 0 5px 5px -2px rgba(0,0,0,.2);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    position: fixed;
+    z-index: 100;
 
     @media screen and (max-width: 768px) {
         transition: 0.8s all ease;
-        justify-content: center;
     }
 `
 
 const Logo = styled.a`
     color: #27282c;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+    font-size: 25px;
     margin-left: 5%;
     text-decoration: none;
     cursor: pointer;
+    /* background-color: lightgreen; */
 
     @media screen and (max-width: 768px) {
-        margin-left: 0;
-        margin-right: 20px;
+        font-size: 20px;
+        margin-left: 1%;
     }
 `
 
-const NavList = styled.ul `
+const NavList = styled.div `
     display: flex;
     margin-right: 5%;
 
     @media screen and (max-width: 768px) {
-        margin-right: 0;
+        margin-right: 1%;
     }
 `
 
@@ -64,22 +61,25 @@ const NavItem = styled.a `
     color: #27282c;
     text-decoration: none;
     padding: 15px;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
+    /* background-color: lightblue; */
+    
     @media screen and (max-width: 768px) {
-        font-size: 15px;
         padding: 10px;
     }
 
+    @media screen and (max-width: 500px) {
+        padding: 8px;
+        font-size: 15px;
+    }
+
     &.active {
-        /* border-bottom: 3px solid #E29C22; */
-        color: #E29C22;
+        color: #29b6f6;
     }
 
     &:hover {
-        /* border-bottom: 3px solid #E29C22; */
-        color: #E29C22;
+        color: #29b6f6;
     }
 `

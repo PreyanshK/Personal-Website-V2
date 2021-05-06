@@ -8,13 +8,12 @@ import HomeBG from '../images/minimal_mountain.png'
 
 const LandingPage = () => {
     return (
-        <HomeContainer>
+        <HomeContainer id="home">
             {/* <HomeContent> */}
                 <HomeText>
                     <HeadingOne>Hi, I'm Preyansh</HeadingOne>
 
-                    <HeadingTwo>
-                        
+                    <HeadingTwo>               
                         <Typewriter
                             options={{
                                 strings: [
@@ -37,28 +36,6 @@ const LandingPage = () => {
                 </HomeImgContainer> */}
             {/* </HomeContent>        */}
         </HomeContainer>
-
-        // <div className="HomeContainer">
-        //     <div className="HeadingContainer">
-        //         <h1 className="HeadingOne">Hi, I'm Preyansh</h1>
-
-        //         <h1 className="HeadingTwo">Hi, I'm a
-        //             <Typewriter
-        //                 options={{
-        //                     strings: [
-        //                         'Software Developer', 
-        //                         'UI/UX Designer', 
-        //                         'Tech Enthusiast',
-        //                         'Toronto Raptors Fan',
-        //                         'Gym Enthusiast',
-        //                     ],
-        //                     autoStart: true,
-        //                     loop: true,
-        //                 }}
-        //             />
-        //         </h1>
-        //     </div>
-        // </div>
     )
 }
 
@@ -68,7 +45,7 @@ export default LandingPage
 const HomeContainer = styled.section`
     background: url(${HomeBG});
     position: relative;
-    height: 95vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +54,6 @@ const HomeContainer = styled.section`
     justify-content: center;
     align-items: center;
 `
-
 // const HomeContent = styled.div`
 //     display: flex;
 //     justify-content: center;
@@ -92,20 +68,19 @@ const HomeContainer = styled.section`
 const HomeText = styled.div`
     width: 600px;
     color: #3D1F04;
-    /* text-align: left; */
     display: flex;
     flex-direction: column;
-    /* background-color: lightcoral; */
     justify-content: space-evenly;
-    /* align-items: center; */
-    
+    /* background-color: lightcoral; */
+
     @media screen and (max-width: 768px) {
         width: 400px;
-        /* flex: 0.5;    */
     } 
 `
 
 const HeadingOne = styled.h1 `
+    margin: 0;
+    padding: 10px;
     font-size: 50px;    
     font-weight: 300;
     /* background-color: lightgreen; */

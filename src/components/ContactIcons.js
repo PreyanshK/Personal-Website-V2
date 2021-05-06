@@ -1,40 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
-import { 
-    GithubOutlined,
-    LinkedinFilled,
-    InstagramOutlined,
-    MailOutlined
-} from '@ant-design/icons'
-import { Button } from 'antd'
-import { icons } from 'antd/lib/image/PreviewGroup'
+import IconButton from '@material-ui/core/IconButton'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
 
 const ContactIcons = () => {
 
     const iconsList = [
         {
-          icon: <GithubOutlined />,
+          icon: <GitHubIcon />,
           url: 'https://github.com/PreyanshK'
         },
         {
-          icon: <LinkedinFilled />,
+          icon: <LinkedInIcon />,
           url: 'https://www.linkedin.com/in/preyansh-kachhia-29b0a0194'
         },
         {
-          icon: <InstagramOutlined />,
+          icon: <InstagramIcon />,
           url: 'https://www.instagram.com/preyansh.k/?hl=en'
         },
         {
-          icon: <MailOutlined />,
+          icon: <MailOutlineIcon />,
           url: 'mailto:pkachhia@uwaterloo.ca'
         },
     ]
+
     return (
         <IconsContainer>
             {iconsList.map( icon => {
                 return(
                     <ButtonWrapper>
-                        <Button icon={icon.icon} size={'large'} href={icon.url}/>
+                        <IconButton size="large" href={icon.url}>
+                            {icon.icon}
+                        </IconButton>
                     </ButtonWrapper>
                 )
             })}
@@ -45,14 +45,14 @@ const ContactIcons = () => {
 export default ContactIcons
 
 const IconsContainer = styled.div`
-    width: 300px;
+    width: 250px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* background-color: lightcoral; */
 `
 
 const ButtonWrapper = styled.div`
-    padding: 15px;
+    padding: 15px 0;
     padding-left: 0;
 `
