@@ -1,89 +1,113 @@
 import React from 'react'
 import styled from 'styled-components'
-import { makeStyles } from '@material-ui/core/styles'
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import Button from '@material-ui/core/Button';
-
-const useStyles = makeStyles( {
-  root: {
-    maxWidth: 345,
-  },
-})
 
 const ExperienceCard = (props) => {
-    const cardStyling = useStyles();
 
     return (
-        <div>
-            <Card className={cardStyling.root} >
+            <CardContainer>
               <CompanyWrapper>
-                <CompanyImg>
-                  {/* get img property from data file (props) */}
-                </CompanyImg>
+                <CompanyImg src={props.experience.image[0]}/>
               </CompanyWrapper>
 
               <InfoContainer>
-                <Title></Title>
-                <Role></Role>
-                <Date></Date>
+                  <Company>{props.experience.company}</Company>
+                  <Role>{props.experience.title}</Role>
+                  <Date>{props.experience.date}</Date>
 
-                <Description>
-                  <BulletItem>{/* map function to get bullet property from data files (props) */}</BulletItem>
-                  <BulletItem>{/* map function to get bullet property from data files (props) */}</BulletItem>
-                  <BulletItem>{/* map function to get bullet property from data files (props) */}</BulletItem>
-                </Description>
+                <DescriptionContainer>
+                  {props.experience.bullets.map((item) => {
+                    return(
+                      <BulletItem>{item}</BulletItem>
+                    )
+                  })}
+                </DescriptionContainer>
               </InfoContainer>
 
               <TechContainer>
-                <Tech>{/* map function for the technologies used */}</Tech>
-                <Tech>{/* map function for the technologies used */}</Tech>
-                <Tech>{/* map function for the technologies used */}</Tech>  
+                {props.experience.tools.map((item) => {
+                  return (
+                    <Tech>{item}</Tech>
+                  )
+                })}
               </TechContainer>
 
-            </Card>
-        </div>
+            </CardContainer>
     )
 }
 
 export default ExperienceCard
 
-const CompanyWrapper = styled.div `
+const CardContainer = styled.div `
+  margin: 20px;
+  min-width: 275px;
+  max-width: 345px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  box-shadow: 0 10px 10px -2px rgba(0,0,0,.2);
+`
 
+const CompanyWrapper = styled.div `
+  border-radius: 8px 8px 0 0;
+  background-color: #F0F0F0;
 `
 
 const CompanyImg = styled.img `
-
+  max-width: 250px;
+  margin: 10px auto;
+  padding: 10px;
 `
 
 const InfoContainer = styled.div`
 
 `
 
-const Title = styled.h1 `
-
+const Company = styled.h1 `
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
 `
 
 const Role = styled.p `
-
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
 `
 
 const Date = styled.p `
-
+  margin-top: 0px;
 `
 
-const Description = styled.div `
-
+const DescriptionContainer = styled.div `
+  text-align: left;
+  padding: 10px 15px;
 `
 
 const BulletItem = styled.p `
-
+  margin: 10px;
+  color: #757575;
 `
 
 const TechContainer = styled.div `
-
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
 `
 
 const Tech = styled.a `
+    color: #555555;
+    background: #f0f0f0;
+    padding: 7px;
+    margin: 10px 5px 5px 5px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
 
+    &:hover {
+      color: #29b6f6;
+    }
 `

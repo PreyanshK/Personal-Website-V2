@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ExperienceCard from '../components/ExperienceCard'
 import SectionHeading from '../components/SectionHeading'
+import experienceData from '../data/experienceData'
 
 const Experience = () => {
     return (
@@ -9,9 +10,12 @@ const Experience = () => {
             <SectionHeading title="Experience" />
 
             <ExperienceWrapper>
-                <ExperienceCard />
+                {experienceData.map( (career) => {
+                    return (
+                        <ExperienceCard experience={career} />
+                    )
+                })}
             </ExperienceWrapper>
-        
         </PageContainer>
     )
 }
@@ -22,16 +26,17 @@ export default Experience
 const PageContainer = styled.section `
     padding: 40px;
     margin: auto;
-    height: 600px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 `
 
 const ExperienceWrapper = styled.div`
     margin: 30px auto;
     max-width: 1200px;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 `
 
 
