@@ -26,7 +26,7 @@ export default Experience
 const PageContainer = styled.section `
     padding: 40px;
     margin: auto;
-    /* background-color: lightgreen; */
+    background-color: #fafafa;
 `
 
 const ExperienceWrapper = styled.div`

@@ -4,34 +4,34 @@ import styled from 'styled-components'
 const ExperienceCard = (props) => {
 
     return (
-            <CardContainer>
-              <CompanyWrapper>
-                <CompanyImg src={props.experience.image[0]}/>
-              </CompanyWrapper>
+        <CardContainer>
+          <CompanyWrapper>
+            <CompanyImg src={props.experience.image[0]}/>
+          </CompanyWrapper>
 
-              <InfoContainer>
-                  <Company>{props.experience.company}</Company>
-                  <Role>{props.experience.title}</Role>
-                  <Date>{props.experience.date}</Date>
+          <InfoContainer>
+              <Company>{props.experience.company}</Company>
+              <Role>{props.experience.title}</Role>
+              <Date>{props.experience.date}</Date>
 
-                <DescriptionContainer>
-                  {props.experience.bullets.map((item) => {
-                    return(
-                      <BulletItem>{item}</BulletItem>
-                    )
-                  })}
-                </DescriptionContainer>
-              </InfoContainer>
+            <DescriptionContainer>
+              {props.experience.bullets.map((item) => {
+                return(
+                  <BulletItem>{item}</BulletItem>
+                )
+              })}
+            </DescriptionContainer>
+          </InfoContainer>
 
-              <TechContainer>
-                {props.experience.tools.map((item) => {
-                  return (
-                    <Tech>{item}</Tech>
-                  )
-                })}
-              </TechContainer>
+          <TechContainer>
+            {props.experience.tools.map((item) => {
+              return (
+                <Tech>{item}</Tech>
+              )
+            })}
+          </TechContainer>
 
-            </CardContainer>
+        </CardContainer>
     )
 }
 
@@ -46,7 +46,7 @@ const CardContainer = styled.div `
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  box-shadow: 0 10px 10px -2px rgba(0,0,0,.2);
+  box-shadow: 0px -2px 15px 0px rgba(0,0,0,.2);
 `
 
 const CompanyWrapper = styled.div `
@@ -61,12 +61,12 @@ const CompanyImg = styled.img `
 `
 
 const InfoContainer = styled.div`
-
+  padding: 10px 20px;
+  text-align: left;
 `
 
 const Company = styled.h1 `
   font-size: 22px;
-  font-weight: 700;
   margin-top: 15px;
 `
 
@@ -82,11 +82,10 @@ const Date = styled.p `
 
 const DescriptionContainer = styled.div `
   text-align: left;
-  padding: 10px 15px;
 `
 
 const BulletItem = styled.p `
-  margin: 10px;
+  /* margin: 10px; */
   color: #757575;
 `
 
@@ -101,7 +100,7 @@ const Tech = styled.a `
     color: #555555;
     background: #f0f0f0;
     padding: 7px;
-    margin: 10px 5px 5px 5px;
+    margin: 10px 15px 5px 0px;
     background: #f0f0f0;
     border-radius: 4px;
     font-size: 15px;
