@@ -23,8 +23,16 @@ const ProjectCard = (props) => {
           </TechContainer>
 
           <ButtonContainer>
-            <IconButton href={props.project.gitHub} target="_blank" variant="outlined"><GitHubIcon/></IconButton>
-            <IconButton href={props.project.project} target="_blank" variant="outlined"><LaunchIcon /></IconButton>
+            {(props.project.gitHub != '') ?
+              <IconButton href={props.project.gitHub} target="_blank" variant="outlined"><GitHubIcon/></IconButton>
+              : ''
+            }
+
+            {(props.project.project != '') ?
+              <IconButton href={props.project.project} target="_blank" variant="outlined"><LaunchIcon /></IconButton>
+              : ''
+            }     
+            
           </ButtonContainer>
         </CardContainer>
     )
