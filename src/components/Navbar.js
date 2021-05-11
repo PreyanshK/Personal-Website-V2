@@ -30,6 +30,7 @@ const NavContainer = styled.nav`
     z-index: 100;
 
     @media screen and (max-width: 768px) {
+        justify-content: center;
         transition: 0.8s all ease;
     }
 `
@@ -40,11 +41,17 @@ const Logo = styled.a`
     margin-left: 5%;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     /* background-color: lightgreen; */
 
     @media screen and (max-width: 768px) {
+        display: none;
         font-size: 20px;
         margin-left: 1%;
+    }
+
+    &:hover {
+        color: #29b6f6;
     }
 `
 
@@ -73,10 +80,6 @@ const NavItem = styled.a `
     @media screen and (max-width: 500px) {
         padding: 8px;
         font-size: 15px;
-    }
-
-    &.active {
-        color: #29b6f6;
     }
 
     &:hover {

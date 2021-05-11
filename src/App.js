@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import Experience from './sections/Experience';
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
       <LandingPage />
+      <ScrollToTopButton />
       <About />
       <Skills />
       <Experience />
