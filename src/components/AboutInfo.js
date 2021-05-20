@@ -34,11 +34,11 @@ const AboutContainer = styled.div `
 `
 
 const AboutText = styled.p `
-    font-size: 16px;
-    font-weight: lighter;
+    font-size: 16px; 
 `
 
 const HighlightWords = styled.span `
+    color: #4AC7DD;
     font-weight: bold;
 `
 
