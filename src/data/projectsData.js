@@ -1,11 +1,53 @@
-import whatsapp from '../images/whatsapp-clone.PNG'
-import covidTracker from '../images/covid-19-tracker.PNG'
-import websiteV1 from '../images/website-v1.png'
-import launchED from '../images/LaunchED.png'
-import capsOdyssey from '../images/Caps-Odyssey.png'
 import solarTracker from '../images/Solar-Tracker.jpg'
-
+import capsOdyssey from '../images/Caps-Odyssey.png'
+import launchED from '../images/LaunchED.png'
+import websiteV1 from '../images/website-v1.png'
+import covidTracker from '../images/covid-19-tracker.PNG'
+import whatsapp from '../images/whatsapp-clone.PNG'
+import Stocker from '../images/Stocker.PNG'
+import NoteSense from '../images/NoteSense.jpeg'
+import MyHealthPal from '../images/MyHealthPal.png'
 const projectsData = [
+    {
+        image: [MyHealthPal],
+        name: 'My Health Pal',
+        desc: 'A mobile app that enables users to manage their vaccination records and prescriptions on the go.',
+        tech: [
+            'React Native',
+            'Flask',
+            'Cassandra',
+            'Firebase',
+        ],
+        gitHub: 'https://github.com/MyHealthPal/MyHealthPalPlatform',
+        project: '',
+    },
+    {
+        image: [NoteSense],
+        name: 'NoteSense (Hack the 6ix 2021)',
+        desc: 'An accessibility app that aids users with impaired hearing and vision by digitizing images or audio snippets into PDF notes using speech and optical character recognition (OCR).',
+        tech: [
+            'React Native',
+            'Flask',
+            'Google Cloud Platform',
+        ],
+        gitHub: 'https://github.com/PreyanshK/NotesSense',
+        project: 'https://devpost.com/software/notesense',
+    },
+    {
+        image: [Stocker],
+        name: 'Stocker (EngHack 2021)',
+        desc: "A social stock management app that allows users to connect with other investors to showcase their stock portfolio to one another and get personalized news for the stocks you've invested in.",
+        tech: [
+            'React Native',
+            'Flask',
+            'Firebase',
+            'SQLite3',
+            'Yahoo Finance API',
+            'NewsAPI',
+        ],
+        gitHub: 'https://github.com/PreyanshK/Stocker',
+        project: 'https://devpost.com/software/stocker-shvkae',
+    },
     {
         image: [whatsapp],
         name: 'WhatsApp Clone',

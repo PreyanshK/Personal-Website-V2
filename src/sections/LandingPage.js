@@ -20,9 +20,9 @@ const LandingPage = () => {
                                     'Software Developer', 
                                     'UI/UX Designer', 
                                     'Tech Enthusiast',
-                                    'Raptors Fan',
+                                    'Artist',
                                     'Fitness Enthusiast',
-                                    'Foodie'
+                                    'Photographer'
                                 ],
                                 autoStart: true,
                                 loop: true,

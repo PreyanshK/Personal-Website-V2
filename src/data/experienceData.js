@@ -5,33 +5,36 @@ const experienceData = [
         {
         image: [Fundserv],
         company: 'Fundserv Inc',
-        title: 'Software Developer',
+        title: 'Software Developer / QA Engineer Intern',
         date: 'May 2021 - Aug 2021',
         bullets: [
-
+            'Implemented Caffeine Cache with Spring Boot to store data from the OAuth2.0 service, decreasing the traffic to Oracle database by 20%',
+            'Updated SQL queries to restrict data retrieval to less than 3 months, resulting in 5% faster load times on ASM’s search page',
+            'Expanded automation test coverage for the ASM web application by refactoring 500+ test scripts, and creating new test scenarios for the global search service and file attachment feature',
+            'Constructed manual and automated test cases for External API testing'
         ],
         tools:[
-            'Angular',
-            'TypeScript',
             'Java',
+            'Spring Boot',
+            'Oracle SQL Developer',
+            'Jenkins',
             'Selenium',
-            'Jira'
+            'Cucumber',
+            'JIRA',
         ]
     },
     {
         image: [AGF],
         company: 'AGF Investments Inc.',
-        title: 'Web Developer',
+        title: 'Web Developer Intern',
         date: 'Sep 2020 - Dec 2020',
         bullets: [
-            'Built web applications on the server-side using Java and Spring Boot and integrated Spring Security to validate users',
-            'Performed regression testing using JUnit and Selenium to validate the frontend and RESTful web services of AGF.com',
-            'Automated regression tests using Maven to reduce the duration by 40%',
-            'Incorporated 2FA for AGF.com by migrating users on the Oracle database to the Auth0 platform'
+            'Automated 400+ regression test cases for AGF.com using Selenium, Maven, and JUnit, increasing testing speeds by 40%',
+            'Coded a Java application utilizing Auth0’s bulk import service to integrate 2FA for the migration of 1000+ users from our Oracle DB',
+            'Analyzed Maven test reports and emended old test scripts to enhance the testing quality and documented improvements on Confluence',
         ],
         tools:[
             'Java',
-            'Spring Boot',
             'Selenium',
             'JUnit',
             'Maven'
@@ -40,7 +43,7 @@ const experienceData = [
     {
         image: [AGF],
         company: 'AGF Investments Inc.',
-        title: 'IT Support Analyst',
+        title: 'IT Support Analyst Intern',
         date: 'Jan 2020 - Apr 2020',
         bullets: [
             'Improved initialization time by 15% by integrating a PowerShell script which added group policies on Active Directory',
