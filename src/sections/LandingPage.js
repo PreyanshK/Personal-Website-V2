@@ -1,59 +1,49 @@
-import React from 'react'
-import styled from 'styled-components'
-import Typewriter from 'typewriter-effect'
-import HomeImg_1 from '../images/sitting-on-desk.svg'
-import HomeImg_2 from '../images/resting-on-iphone.svg'
-import HomeImg_3 from '../images/home-desk.svg'
-import HomeBG from '../images/minimal_mountain.png'
+import React from 'react';
+import styled from 'styled-components';
+import Typewriter from 'typewriter-effect';
+import HomeBG from '../images/minimal_mountain.png';
 
 const LandingPage = () => {
-    return (
-        <HomeContainer id="home">
-            {/* <HomeContent> */}
-                <HomeText>
-                    <HeadingOne>Hi, I'm Preyansh</HeadingOne>
+  return (
+    <HomeContainer id="home">
+      <HomeText>
+        <HeadingOne>Hi, I'm Preyansh</HeadingOne>
 
-                    <HeadingTwo>               
-                        <Typewriter
-                            options={{
-                                strings: [
-                                    'Software Developer', 
-                                    'UI/UX Designer', 
-                                    'Tech Enthusiast',
-                                    'Artist',
-                                    'Fitness Enthusiast',
-                                    'Photographer'
-                                ],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                    </HeadingTwo>
-                </HomeText>
+        <HeadingTwo>
+          <Typewriter
+            options={{
+              strings: [
+                'Software Developer',
+                'UI/UX Designer',
+                'Tech Enthusiast',
+                'Artist',
+                'Fitness Enthusiast',
+                'Photographer',
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </HeadingTwo>
+      </HomeText>
+    </HomeContainer>
+  );
+};
 
-                {/* <HomeImgContainer>
-                    <img src={HomeImg_3} alt="Home Image"/>
-                </HomeImgContainer> */}
-            {/* </HomeContent>        */}
-        </HomeContainer>
-    )
-}
-
-export default LandingPage
-
+export default LandingPage;
 
 const HomeContainer = styled.section`
-    background: url(${HomeBG});
-    position: relative;
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* fixed = parallax effect*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
+  background: url(${HomeBG});
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* fixed = parallax effect*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 // const HomeContent = styled.div`
 //     display: flex;
 //     justify-content: center;
@@ -66,39 +56,39 @@ const HomeContainer = styled.section`
 // `
 
 const HomeText = styled.div`
-    width: 600px;
-    color: #3D1F04;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* background-color: lightcoral; */
+  width: 600px;
+  color: #3d1f04;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: lightcoral; */
 
-    @media screen and (max-width: 768px) {
-        width: 400px;
-    } 
-`
+  @media screen and (max-width: 768px) {
+    width: 400px;
+  }
+`;
 
-const HeadingOne = styled.h1 `
-    margin: 0;
-    padding: 10px;
-    font-size: 50px;    
-    font-weight: 300;
-    /* background-color: lightgreen; */
+const HeadingOne = styled.h1`
+  margin: 0;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 300;
+  /* background-color: lightgreen; */
 
-    @media screen and (max-width: 768px) {
-        font-size: 30px;  
-    }
-`
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+`;
 
-const HeadingTwo = styled.h1 `
-    font-size: 40px;
-    font-weight: 500;
-    /* background-color: lightblue; */
+const HeadingTwo = styled.h1`
+  font-size: 40px;
+  font-weight: 500;
+  /* background-color: lightblue; */
 
-    @media screen and (max-width: 768px) {
-        font-size: 30px;  
-    }
-`
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+`;
 
 // const HomeImgContainer = styled.div`
 //     background-color: lightgreen;
@@ -114,6 +104,6 @@ const HeadingTwo = styled.h1 `
 
 //         img {
 //             height: 30vh;
-//         }    
-//     }     
+//         }
+//     }
 // `

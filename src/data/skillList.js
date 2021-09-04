@@ -1,8 +1,27 @@
-    const skillList = [
-        ["HTML", "CSS", "JavaScript", "Python", "C++", "Java", "C#"],
-        ["React", "Angular", "Express.js", "Node.js", "MongoDB", "Firebase"],
-        ["Git & GitHub", "Postman", "Heroku", "Docker", "Jira", "Unity"],
-        ["Photoshop", "Illustrator", "Figma"],
-    ]
+const skillList = [
+  ['C++', 'JavaScript', 'Python', 'Java', 'C#', 'HTML', 'CSS', 'VHDL'],
+  [
+    'React.js',
+    'React Native',
+    'Redux',
+    'Angular',
+    'Node.js',
+    'Express.js',
+    'Flask',
+    'Spring Boot',
+    'JUnit',
+  ],
+  [
+    'Git & GitHub',
+    'Postman',
+    'Firebase',
+    'MongoDB',
+    'Cassandra',
+    'Google Cloud Platform',
+    'Jira',
+    'Unity',
+  ],
+  ['Figma', 'Photoshop', 'Illustrator'],
+];
 
-    export default skillList
+export default skillList;
