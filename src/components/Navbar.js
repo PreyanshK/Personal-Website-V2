@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PK_Logo from '../images/PK_Logo.png';
+import PK_Logo from '../images/PK_Final.PNG';
 
 const Navbar = () => {
   return (
