@@ -1,5 +1,6 @@
-# Personal Website
-My 2nd version of my personal website which is built using React.js and Material-UI library.
+# 2nd Version of my Personal Website
+- Built using React.js and Material-UI library
+- Compatible with mobile devices and a simplistic user interface
 
 ### Landing Page
 
