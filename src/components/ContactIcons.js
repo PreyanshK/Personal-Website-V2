@@ -31,7 +31,7 @@ const ContactIcons = () => {
       {iconsList.map((icon) => {
         return (
           <ButtonWrapper>
-            <IconButton size="large" href={icon.url}>
+            <IconButton size='large' href={icon.url} target='_blank'>
               {icon.icon}
             </IconButton>
           </ButtonWrapper>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProfilePic from '../images/Preyansh.jpg';
+import ProfilePic from '../images/preyansh-big-sur.jpg';
 
 const ProfileImg = () => {
   return (
@@ -15,5 +15,5 @@ export default ProfileImg;
 const Image = styled.img`
   width: 250px;
   margin: 20px;
-  box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 `;

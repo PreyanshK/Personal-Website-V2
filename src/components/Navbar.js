@@ -5,15 +5,15 @@ import PK_Logo from '../images/PK_Final.PNG';
 const Navbar = () => {
   return (
     <NavContainer>
-      <LogoContainer href="#home">
+      <LogoContainer href='#home'>
         <Logo src={PK_Logo}></Logo>
       </LogoContainer>
       <NavList>
-        <NavItem href="#about">About</NavItem>
-        <NavItem href="#skills">Skills</NavItem>
-        <NavItem href="#experience">Experience</NavItem>
-        <NavItem href="#projects">Projects</NavItem>
-        <NavItem href="#contact">Contact</NavItem>
+        <NavItem href='#about'>About</NavItem>
+        <NavItem href='#skills'>Skills</NavItem>
+        <NavItem href='#experience'>Experience</NavItem>
+        <NavItem href='#projects'>Projects</NavItem>
+        <NavItem href='#contact'>Contact</NavItem>
       </NavList>
     </NavContainer>
   );
@@ -52,10 +52,6 @@ const LogoContainer = styled.a`
     font-size: 20px;
     margin-left: 1%;
   }
-
-  /* &:hover {
-    color: #29b6f6;
-  } */
 `;
 
 const Logo = styled.img`
@@ -91,6 +87,6 @@ const NavItem = styled.a`
   }
 
   &:hover {
-    color: #29b6f6;
+    color: #418cea;
   }
 `;
