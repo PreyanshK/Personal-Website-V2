@@ -58,8 +58,7 @@ const CardContainer = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
-  box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 
 const ProjectImg = styled.img`
@@ -101,6 +100,7 @@ const Tech = styled.div`
 
   &:hover {
     color: #418cea;
+    cursor: pointer;
   }
 `;
 

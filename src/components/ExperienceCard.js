@@ -4,9 +4,7 @@ import styled from 'styled-components';
 const ExperienceCard = (props) => {
   return (
     <CardContainer>
-      <CompanyWrapper>
-        <CompanyImg src={props.experience.image[0]} />
-      </CompanyWrapper>
+      <CompanyImg src={props.experience.image[0]} />
 
       <InfoContainer>
         <Company>{props.experience.company}</Company>
@@ -40,18 +38,12 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
-  box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.2);
-`;
-
-const CompanyWrapper = styled.div`
-  border-radius: 8px 8px 0 0;
-  background-color: #f0f0f0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 
 const CompanyImg = styled.img`
-  max-width: 250px;
-  margin: 10px auto;
-  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
 `;
 
 const InfoContainer = styled.div`
@@ -79,7 +71,6 @@ const DescriptionContainer = styled.div`
 `;
 
 const BulletItem = styled.p`
-  /* margin: 10px; */
   color: #757575;
 `;
 
@@ -102,5 +93,6 @@ const Tech = styled.a`
 
   &:hover {
     color: #418cea;
+    cursor: pointer;
   }
 `;
